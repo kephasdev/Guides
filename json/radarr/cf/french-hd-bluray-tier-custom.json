@@ -1,0 +1,73 @@
+{
+  "trash_id": "57f34251344be2e283fc30e00e458be7",
+  "trash_scores": {
+    "default": 1700
+  },
+  "name": "FR HD Bluray Tier Custom1",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "BLURAY",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 9
+      }
+    },
+    {
+      "name": "Not Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not 2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "PopHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PopHD)$"
+      }
+    },
+    {
+      "name": "VF2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(VF2)\\b"
+      }
+    },
+    {
+      "name": "Both VFF and VFQ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(VF(F|Q)[ .]VF(F|Q))\\b"
+      }
+    },
+    {
+      "name": "VFF-VFQ-VOA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b((VFF|VFQ|VOA|VO)[ .-](VFF|VFQ|VOA|VO)[ .-](VFF|VFQ|VOA|VO))\\b"
+      }
+    }
+  ]
+}
