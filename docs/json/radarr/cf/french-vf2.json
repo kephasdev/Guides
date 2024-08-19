@@ -23,12 +23,12 @@
       }
     },
     {
-      "name": "VFF-VFQ-VOA",
+      "name": "VFF-VFQ",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b((VFF|VFQ|VOA|VO)[ .-](VFF|VFQ|VOA|VO)[ .-](VFF|VFQ|VOA|VO))\\b"
+        "value": "\\b(VF(F|Q).*VF(F|Q))\\b"
       }
     }
   ]

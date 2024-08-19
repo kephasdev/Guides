@@ -21,6 +21,15 @@
       "fields": {
         "value": "\\b(VF(F|Q)[ .]VF(F|Q))\\b"
       }
+    },
+    {
+      "name": "VFF-VFQ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(VF(F|Q).*VF(F|Q))\\b"
+      }
     }
   ]
 }
